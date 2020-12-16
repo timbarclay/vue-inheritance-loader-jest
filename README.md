@@ -1,5 +1,7 @@
 # vue-inheritance-loader-jest
 
+This is an attempt to re-work this package to avoid use of `deasync`. It doesn't work yet...
+
 Jest transform to support testing on components that use [vue-inheritance-loader](https://github.com/mrodal/vue-inheritance-loader). 
 
 ## Installation
