@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/mrodal/vue-inheritance-loader-jest#readme",
   "peerDependencies": {
-    "vue-jest": "^3.0.2",
+    "vue-jest": "^3.0.7",
     "vue-inheritance-loader": "^0.1.10",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
     "@vue/component-compiler-utils": "^2.6.0"
   },
-  "dependencies": {    
+  "dependencies": {
     "htmlparser2": "^4.1.0"
   }
 }
