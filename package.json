@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrodal/vue-inheritance-loader-jest.git"
+    "url": "https://github.com/timbarclay/vue-inheritance-loader-jest.git"
   },
   "keywords": [
     "jest",
@@ -19,12 +19,12 @@
     "webpack",
     "vue-inheritance-loader"
   ],
-  "author": "Matias Rodal (@mrodal)",
+  "author": "Matias Rodal (@mrodal), Tim Barclay (@timbarclay)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrodal/vue-inheritance-loader-jest/issues"
+    "url": "https://github.com/timbarclay/vue-inheritance-loader-jest/issues"
   },
-  "homepage": "https://github.com/mrodal/vue-inheritance-loader-jest#readme",
+  "homepage": "https://github.com/timbarclay/vue-inheritance-loader-jest#readme",
   "peerDependencies": {
     "vue-jest": "^3.0.7",
     "vue-inheritance-loader": "^0.1.10",
