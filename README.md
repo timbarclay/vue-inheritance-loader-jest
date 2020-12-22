@@ -10,11 +10,13 @@ I've developed this to get around the specific deasync problem on a specific pro
 
 ## Installation
 
-This package isn't currently published in the NPM registry, so to use it add the following to your package.json
+    > npm install --save-dev @timbarclay/vue-inheritance-loader-jest
 
-```json
-devDependencies: {
-    "vue-inheritance-loader-jest": "timbarclay/vue-inheritance-loader-jest",
+In your jest config
+
+```javascript
+transform: {
+    '^.+\\.vue$': '@timbarclay/vue-inheritance-loader-jest'
 }
 ```
 
