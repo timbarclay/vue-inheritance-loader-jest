@@ -4,7 +4,6 @@ const compiler = require('vue-template-compiler');
 const htmlparser = require("htmlparser2");
 const {parse} = require('@vue/component-compiler-utils');
 const {getOptions} = require('loader-utils');
-//const schema = require('options.json');
 const schema = require('vue-inheritance-loader/src/options.json')
 const validateOptions = require('schema-utils');
 
@@ -136,12 +135,12 @@ function resolveComponent(currentSource, basePath, aliases, context) {
       }
       return processComponent(baseAbsPath)
     } else {
-      // TODO Uh oh!
-      console.error(`Don't know what to do with this`, 'context', context, 'basePath', basePath, 'baseRelPath', baseRelPath)
-      /* context.resolve(basePath, baseRelPath, (err, baseAbsPath) => {
-        if (err) reject(err);
-        processComponent(baseAbsPath)
-      }) */
+      // I'm not 100% convinced this is the right thing to do here...
+      if (baseRelPath.substr(-4).toLowerCase() != '.vue') {
+        baseRelPath = baseRelPath + '.vue';
+      }
+      var baseAbsPath = path.join(basePath, baseRelPath);
+      return processComponent(baseAbsPath)
     }
   } else {
     return {source: currentSource, ancestorsPaths: []};
